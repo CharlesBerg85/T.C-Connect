@@ -1,0 +1,140 @@
+mat-card-content {
+  align-items: center;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-color: white;
+}
+
+form {
+  background-color: transparent;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.list {
+  color: white;
+}
+
+textarea {
+  text-align: center;
+  font-weight: 300;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  padding: 10px 10px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  width: 285px;
+}
+
+.edit-btn {
+  height: 35px;
+	box-shadow:inset 0px 1px 0px 0px #b571e3;
+	background:linear-gradient(to bottom, #09040d 5%, #bc80ea 100%);
+	background-color:#09040d;
+	border-radius:6px;
+	border:1px solid #e5d8f0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:0px 23px 35px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #974cd4;
+}
+	.edit-btn:hover {
+	background:linear-gradient(to bottom, #731573 5%, #0c0d0d 100%);
+	background-color:#731573;
+}
+
+ .edit-btn:active {
+	position:relative;
+	top:1px;
+}
+
+.delete-btn {
+  height: 35px;
+	box-shadow:inset 0px 1px 3px 0px #dfe8da;
+	background-color:#070806;
+	border-radius:5px;
+	border:1px solid #dde0dc;
+	display:inline-block;
+	cursor:pointer;
+	color:#ebe8eb;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:0px 23px 35px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b8a3c;
+}
+
+.delete-btn:hover {
+	background-color:#8c9c83;
+}
+
+.delete-btn:active {
+	position:relative;
+	top:1px;
+}
+
+.update-btn {
+  height: 35px;
+  padding:0px 23px 35px 23px;
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background-color:#61736e;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+
+.update-btn:hover {
+	background-color:#3b4242;
+}
+
+.update-btn:active {
+	position:relative;
+	top:1px;
+}
+
+.cancel-btn {
+  height: 35px;
+  padding:0px 23px 35px 23px;
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background-color:#61736e;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+
+.cancel-btn:hover {
+	background-color:#3b4242;
+}
+
+.cancel-btn:active {
+	position:relative;
+	top:1px;
+}

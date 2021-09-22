@@ -1,0 +1,14 @@
+<!-- Body Content -->
+
+  <div>
+    <mat-card-content class="post-message">
+      <div class="post-message-header">
+        <form (ngSubmit)="postMessage()">
+          <!--property item message is being binned together with whatever post is being inserted into text area and
+          is being submitted through the ngSubmit to the addPost -->
+          <textarea type="text" placeholder="What's on your mind?" [(ngModel)]="post.message" name="message"></textarea>
+          <button class="post-btn" type="submit" mat-raised-button color="primary">Post</button>
+        </form>
+      </div>
+    </mat-card-content>
+  </div>

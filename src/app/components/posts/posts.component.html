@@ -1,0 +1,23 @@
+<!--Loop Through All Posts From Database and Display -->
+
+
+  <app-add-post></app-add-post>
+  <div>
+    <cdk-virtual-scroll-viewport style="height: 500px" itemSize="90">
+      <mat-card-content *cdkVirtualFor="let post of posts">
+        <textarea class="list"> {{post.message}} </textarea>
+        <button class="edit-btn" (click)="editPost($event, post)" mat-raised-button color="primary">Edit</button>
+        <div *ngIf="editState && postToEdit.uid == post.uid">
+          <form (ngSubmit)="updatePost(post)">
+            <textarea type="text" placeholder="What's on your mind?" [(ngModel)]="post.message"
+              name="update-message"></textarea>
+            <br>
+            <button class="update-btn" type="submit" mat-raised-button color="primary">Update</button>
+            <button class="delete-btn" (click)="deletePost($event, post)" mat-raised-button color="warn">Delete</button>
+            <button class="cancel-btn" (click)="clearState()" type="submit" mat-raised-button
+              color="primary">Cancel</button>
+          </form>
+        </div>
+      </mat-card-content>
+    </cdk-virtual-scroll-viewport>
+  </div>

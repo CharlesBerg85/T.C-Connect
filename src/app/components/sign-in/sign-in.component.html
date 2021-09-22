@@ -1,0 +1,72 @@
+<div class="center-content">
+  <mat-card class="sign-in-card">
+    <mat-card-content>
+      <mat-tab-group>
+        <mat-tab label="Log-In">
+          <mat-form-field class="sign-up" appearance="fill">
+            <mat-label style="color: white;">E-mail</mat-label>
+            <input type="e-mail" matInput placeholder="E-mail" #eMail required>
+          </mat-form-field>
+
+          <mat-form-field class="sign-up" appearance="fill">
+            <mat-label style="color: white;">Password</mat-label>
+            <input type="password" matInput placeholder="Password" #userPassword required>
+          </mat-form-field>
+
+          <!-- Forgot Password -->
+
+          <button class="card2" routerLink="/forgot-password"> Forgot Password</button>
+          
+
+          <!-- login with email & password -->
+
+          <button class="login-button" mat-stroked-button color="primary"
+            (click)="authService.SignIn(eMail.value, userPassword.value)">Login</button>
+
+          <!-- Login with google -->
+
+          <button class="google-button" mat-stroked-button color="primary" (click)="authService.GoogleAuth()">
+            Login with Google</button>
+        </mat-tab>
+
+        <!-- Sign Up -->
+
+        <mat-tab label="Sign Up" >
+          <mat-form-field class="sign-up" appearance="fill">
+            <mat-label style="color: white;">FirstName</mat-label>
+            <input type="firstName" matInput placeholder="firstName" #userfirstName required>
+            <mat-icon matSuffix>name</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field class="sign-up" appearance="fill">
+            <mat-label style="color: white;">LastName</mat-label>
+            <input type="lastName" matInput placeholder="lastName" #userlastName required>
+            <mat-icon matSuffix>name</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field class="sign-up" appearance="fill">
+            <mat-label style="color: white;">E-mail</mat-label>
+            <input type="email" matInput placeholder="E-mail" #userEmail required>
+            <mat-icon matSuffix>email</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field class="sign-up" appearance="fill">
+            <mat-label style="color: white;">Password</mat-label>
+            <input type="password" matInput placeholder="Password" #userPwd required>
+            <mat-icon matSuffix>vpn_key</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field class="sign-up" appearance="fill">
+            <mat-label style="color: white;">Confirm Password</mat-label>
+            <input type="password" matInput placeholder="Confirm Password">
+            <mat-icon matSuffix>vpn_key</mat-icon>
+          </mat-form-field>
+
+          <button class="signup-button" mat-stroked-button color="primary"
+            (click)="authService.SignUp(userfirstName.value, userlastName.value, userEmail.value, userPwd.value)">Sign
+            Up</button>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card-content>
+  </mat-card>
+</div>

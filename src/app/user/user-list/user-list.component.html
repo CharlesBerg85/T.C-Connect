@@ -1,0 +1,7 @@
+
+<button (click)="openDialog()">Find a graduate</button>
+<cdk-virtual-scroll-viewport class="friends-list" style="height: 700px" itemSize="90">
+    <app-user-list-item class ="center-content" *ngFor="let user of users | async" [user]="user"></app-user-list-item>
+</cdk-virtual-scroll-viewport>
+
+

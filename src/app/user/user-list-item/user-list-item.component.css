@@ -1,0 +1,21 @@
+.user-title {
+    margin-left: 1em;
+}
+ul {
+    list-style: none;
+}
+
+mat-card {
+    margin: 10px;
+    width: 300px;
+}
+.center-content {
+    text-align: -webkit-center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    border-radius: 3px white;
+    background-color: transparent;
+  }
+  

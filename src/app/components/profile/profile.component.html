@@ -1,0 +1,9 @@
+You are logged in as <strong>{{currentUser?.firstName }}</strong>
+<hr>
+<div *ngFor="let users of user | async">
+    <app-user-profile [user]="user" [currentUser]="currentUser"></app-user-profile>
+</div> 
+
+
+
+

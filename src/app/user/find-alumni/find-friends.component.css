@@ -1,0 +1,21 @@
+.viewport {
+    height: 100vh;
+    width: 80vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+}
+
+    .li {
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+        background: whitesmoke;
+        box-shadow: 2px 2px 3px
+    }
+
+body { font-family: sans-serif; }
+.ais-SearchBox { margin-bottom: 1em }

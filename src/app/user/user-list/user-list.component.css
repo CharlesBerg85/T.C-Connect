@@ -1,0 +1,10 @@
+.center-content {
+    text-align: -webkit-center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    border-radius: 3px white;
+    background-color: transparent;
+  }
+  

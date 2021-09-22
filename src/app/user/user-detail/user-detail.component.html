@@ -1,0 +1,44 @@
+
+     <!-- <img [src]="user.photoURL || '//:0'" alt="{{ user.displayName }}"> -->
+    
+
+<body>
+  <div *ngIf="user">
+    <mat-card class="profile-pic">
+      <img src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Profile Image" class="profile-image">
+      <div class="profile">
+        <mat-card-title>{{ user.firstName }} {{ user.lastName }} </mat-card-title>
+        <mat-card-subtitle>T.C Center</mat-card-subtitle>
+        <mat-card-subtitle>Grad Year</mat-card-subtitle>
+      </div>
+    </mat-card>
+    <mat-card class="test-card">
+      <mat-card-content>
+        <h1>Testimony</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt arcu ut sem dignissim tincidunt.
+          Fusce
+          eu leo a nulla eleifend hendrerit. Nullam non tortor at purus sagittis iaculis. Maecenas ultricies consequat
+          ante nec fermentum. Pellentesque sed nibh at ante tempor interdum id eu dolor. Cras faucibus sed eros et
+          mollis.
+          Donec congue elementum posuere. Vivamus id dictum nulla. Vestibulum eleifend fringilla neque nec interdum.
+          Vestibulum sed dui augue. In hac habitasse platea dictumst.</p>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="bio-card">
+      <mat-card-content>
+        <h2>Bio</h2>
+        <ul>
+          <li>T.C Grad Center:</li>
+          <li>T.C Grad Year:</li>
+          <li>Currently Living:</li>
+          <li>E-Mail:</li>
+          <li>Phone Number:</li>
+          <li>Birthday:</li>
+          <li>Favorite Bible Verse:</li>
+          <li>Favorite Book in Bible:</li>
+          <li>Hobbies:</li>
+        </ul>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</body>

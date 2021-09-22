@@ -1,0 +1,44 @@
+.sidenav-container {
+  height: 100%;
+  background: transparent;
+  
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.hidden{
+  display: none;
+}
+
+.toolbar{
+  background: transparent;
+}
+
+.tool-bar-links{
+  flex: 1 1 auto;
+}
+
+mat-toolbar a  {
+  display: inline-block;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.tc{
+  color: white;
+}
+
+.title{
+  text-align: center;
+  color: white;
+}
+
+.VOD {
+  text-align: center;
+  color: white;
+}
+
+
